@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 html, body {
-  background-color: #0d0d0d;
-  color: white;
+  @apply text-gray-800 bg-white;
 }
-
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -20,4 +18,17 @@ html, body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #444;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 rounded-md border border-gray-300 bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400;
+}
+
+
+.btn-primary {
+  @apply bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md shadow font-medium transition;
+}
+
+.glass-card {
+  @apply bg-white bg-opacity-40 backdrop-blur-md shadow-lg rounded-xl;
 }
